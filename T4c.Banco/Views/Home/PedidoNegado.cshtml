@@ -1,0 +1,13 @@
+﻿@model T4c.Banco.Models.PedidoFinanciamento
+
+@{
+    ViewBag.Title = "Banco - Pedido de Financiamento Negado";
+}
+
+<h2>Pedido de Financiamento Negado</h2>
+
+<p>@Html.DisplayFor(model => model.Nome) (Cpf: @Html.DisplayFor(model => model.Cpf)), lamentamos informar que seu pedido de financiamento foi negado.</p>
+
+<p>
+    @Html.ActionLink("Início", "Index")
+</p>

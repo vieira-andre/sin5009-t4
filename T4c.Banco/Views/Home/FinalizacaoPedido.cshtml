@@ -1,0 +1,13 @@
+﻿@model T4c.Banco.Models.PedidoFinanciamento
+
+@{
+    ViewBag.Title = "Banco - Pedido Finalizado";
+}
+
+<h2>Pedido de Financiamento Concluído</h2>
+
+<p>Bom dia, @Html.DisplayFor(model => model.Nome) (Cpf: @Html.DisplayFor(model => model.Cpf)). Temos o prazer de lhe informar que o desembolso referente ao seu pedido de financiamento (R$ @Html.DisplayFor(model => model.ValorFinanciamento)) já foi realizado.</p>
+
+<p>
+    @Html.ActionLink("Início", "Index")
+</p>

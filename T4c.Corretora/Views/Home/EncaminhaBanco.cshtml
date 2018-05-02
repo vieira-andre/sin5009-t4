@@ -1,0 +1,14 @@
+﻿@model T4c.Corretora.Models.PedidoFinanciamentoCorretora
+
+@{
+    ViewBag.Title = "Corretora - Encaminhar para Banco";
+}
+
+<h2>Pedido de Financiamento Encaminhado para Banco</h2>
+
+<p>@Html.DisplayFor(model => model.Nome) (Cpf: @Html.DisplayFor(model => model.Cpf)), lamentamos informar que seu pedido de financiamento foi negado pois excede o nosso limite.</p>
+<p>Encaminharemos sua solicitação ao banco.</p>
+
+<p>
+    @Html.ActionLink("Seguir para banco", "SeguirParaBanco", Model)
+</p>

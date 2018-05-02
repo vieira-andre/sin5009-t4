@@ -1,0 +1,72 @@
+﻿@model T4c.Banco.Models.PedidoFinanciamento
+
+@{
+    ViewBag.Title = "Banco - Status do pedido";
+}
+
+<h2>Status do Pedido de Financiamento</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cpf)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cpf)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RendaMensal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RendaMensal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ValorFinanciamento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ValorFinanciamento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsSaudeFinanceiraOk)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsSaudeFinanceiraOk)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AreRendimentosOk)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AreRendimentosOk)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StatusFinanciamento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StatusFinanciamento)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Prosseguir", "AposStatusPedidoFinanciamento", Model)
+</p>
